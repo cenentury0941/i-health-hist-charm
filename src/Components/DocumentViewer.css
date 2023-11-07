@@ -1,0 +1,18 @@
+.DocumentViewer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    width: 39vw;
+    background-color: #00000069;
+    /* background-image: linear-gradient( to bottom , #6e96ab , #000000 ); */
+    background-image: linear-gradient( to bottom , #26627e , #07202b );
+    margin: 3vmin;
+    position: fixed;
+    right: 1vmin;
+    top: 8vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px #000000AA;
+    gap: 3%;
+}

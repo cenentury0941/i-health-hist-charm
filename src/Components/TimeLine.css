@@ -1,0 +1,10 @@
+.ZoomOnHover {
+    transition-duration: 0.15s;
+    transform-origin: left;
+    user-select: none;
+    cursor: pointer;
+}
+
+.ZoomOnHover:hover {
+    scale: 1.05; 
+}

@@ -1,0 +1,52 @@
+.ViewHolder {
+    height: 7vh;
+    width: 90%;
+    color: white;
+    background-color: #00000039;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 1%;
+    padding-left: 5%;
+    border-radius: 7px;
+    outline: 1px solid black;
+    transition-duration: 0.2s;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.ViewHolder:hover {
+    background-color: rgb(39, 83, 110);
+}
+
+.ViewHolder:active {
+    background-color: #448dbb;
+}
+
+h1 {
+    font-size: large;
+    font-weight: lighter;
+    user-select: none;
+}
+
+.SelectedViewHolder {
+    background-color: rgb(58, 91, 112);
+    outline: 2px solid rgba(255, 132, 0, 0.867);
+}
+
+.AccessModifierButtonContainer {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    padding: 3%;
+    border-radius:100%;
+    transition-duration: 0.1s;
+    border: 2px solid #000f;
+    background-color: rgba(127, 127, 127, 0.427);
+}
+
+.AccessModifierButtonContainer:hover {
+    border: 2px solid white;
+}

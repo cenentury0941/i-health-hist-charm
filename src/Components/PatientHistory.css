@@ -1,0 +1,23 @@
+.HistoryContainer {
+    height: 90%;
+    width: 20vw;
+    box-sizing: content-box;
+    margin-top: 24vh;
+    padding-right: 20%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: start;
+}
+
+.FixedTitle {
+    font-size: 2rem;
+    position: fixed;
+    top: 10vh;
+    left: 19vw;
+    user-select: none;
+    font-weight: lighter;
+}
