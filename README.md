@@ -1,5 +1,7 @@
 # Revolutionizing Healthcare with iHealthHist
 
+![Alt text](https://raw.githubusercontent.com/cenentury0941/i-health-hist-okta/main/splash.png)
+
 ## Introduction
 In recent years, the medical sector has faced numerous challenges, highlighting the urgent need for a major overhaul. This transformation is particularly critical in the face of global epidemics, resource shortages, and the rise of resistant bacteria and viruses. The integration and streamlining of healthcare services beyond conventional boundaries are essential to ensure seamless access to crucial healthcare information for prompt diagnosis and disease prevention.
 
@@ -30,6 +32,7 @@ That is where Okta comes in. We've implemented Okta as our customer identity sol
 
 
 ## How we built it
+![Alt text](https://raw.githubusercontent.com/cenentury0941/i-health-hist-okta/main/Diag1.png)
 - The application is a Single Page Application built using ReactJS and deployed on GithubPages. 
 - The AI aspect of the application is powered by OpenAI GPT 3.5 and is used to provide the AI chatbot functionality in the doctor portal. 
 - Okta Authentication was implemented using the Okta React SDK, an npm library which provides React SPAs to access the functionalities provided by Okta Identity Services such as auth, user provisioning, Group Management, etc.
