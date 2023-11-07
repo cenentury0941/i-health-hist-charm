@@ -22,7 +22,7 @@ const darkTheme = createTheme({
 const oktaAuth = new OktaAuth({
   issuer: 'https://dev-59558883.okta.com/oauth2/default',
   clientId: '0oad478u09NXaMxZM5d7',
-  redirectUri: "https://cenentury0941.github.io/iHealthHist/PatientPortal" //"http://localhost:3000/iHealthHist/PatientPortal"
+  redirectUri: "http://localhost:3000/iHealthHist/PatientPortal"
 });
 
 function App() {
@@ -47,8 +47,8 @@ function App() {
       <ResponsiveAppBar />
       <Routes>
         <Route path="/" element={<HomePage setUserType={setUserType}/>}/>
-        <Route path="/iHealthHist/DoctorPortal/*" element={<DoctorPortalPageContainer />} />
-        <Route path="PatientPortal/*" element={<PatientPortalPageContainer />} />
+        <Route path="/DoctorPortal/*" element={<DoctorPortalPageContainer />} />
+        <Route path="/PatientPortal/*" element={<PatientPortalPageContainer />} />
         <Route path="/PatientPortal" element={<PatientPortalPageContainer />} />
         <Route path="PatientPortal" element={<PatientPortalPageContainer />} />
         <Route path="*" element={<div style={{backgroundColor:"white", fontSize:"5rem", color:"black"}} >404</div>} />

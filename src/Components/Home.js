@@ -12,8 +12,8 @@ function HomePage(props) {
     const { oktaAuth, authState } = useOktaAuth();
     const [searchParams, setSearchParams] = useSearchParams();
     
-    const login = async () => oktaAuth.signInWithRedirect({redirectUri: "https://cenentury0941.github.io/iHealthHist/PatientPortal"});//"http://localhost:3000/iHealthHist/PatientPortal"});
-    const login2 = async () => oktaAuth.signInWithRedirect({redirectUri: "https://cenentury0941.github.io/iHealthHist/DoctorPortal"});//"http://localhost:3000/iHealthHist/DoctorPortal"});
+    const login = async () => oktaAuth.signInWithRedirect({redirectUri: "http://localhost:3000/iHealthHist/PatientPortal"});
+    const login2 = async () => oktaAuth.signInWithRedirect({redirectUri: "http://localhost:3000/iHealthHist/DoctorPortal"});
     const logout = async () => oktaAuth.signOut('/');
 
     const navigate = useNavigate();
@@ -95,7 +95,7 @@ function HomePage(props) {
             loading ? <div className="Container"><CircularProgress /></div> : 
             <div className="Container">
                 <p>Login to view Patient/Doctor portals</p>
-                <div className="LoginButton" onClick={ () => { props.setUserType(1) ; loginUser() }} ><WheelchairPickupIcon />Login Using Patient Credentials</div>
+                <div className="LoginButton" onClick={ () => { props.setUserType(1) ; login() }} ><WheelchairPickupIcon />Login Using Patient Credentials</div>
                 <div className="LoginButton" onClick={ () => { props.setUserType(2) ; login2() }}><MedicalServicesIcon />Login Using Doctor Credentials</div>
             </div>
         }
