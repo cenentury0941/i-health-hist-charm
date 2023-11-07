@@ -18,10 +18,22 @@ iHealthHist prioritizes data security, granting patients control over their info
 ## Assisting Healthcare Practitioners
 To aid healthcare practitioners in navigating vast amounts of information, iHealthHist incorporates an assistive bot. This bot helps pinpoint relevant documents, easing the workload on practitioners and enabling quicker and more informed decisions.
 
-## Leveraging OpenText for Enhanced Security and Functionality
-The security of data stored on the cloud is bolstered by leveraging the Identity and Access Management (IAM) Service provided by OpenText. This approach not only ensures data security but also facilitates secure integration with third-party services, enhancing convenience and efficiency.
+## AI Functionality
+To aid healthcare practitioners in navigating vast amounts of information, iHealthHist incorporates an assistive bot. This bot helps pinpoint relevant documents, easing the workload on practitioners and enabling quicker and more informed decisions.
 
-OpenText Content Storage and Content Metadata services form the foundation of document storage, retrieval, and sharing on the cloud. These services enable secure and reliable file uploads and downloads, aligning with the stringent requirements of the healthcare industry.
+The AI assistant is powered by OpenAI API and can provide concise descriptions of the patient's available data based on the prompts provided by the healthcare professional freeing up time spent by professionals in trying to find relevant information or summations of the patients' history.
+
+## Okta Authentication
+Since our application handles a lot of sensitive healthcare related data, security and access control prove to be vital requirements. 
+
+That is where Okta comes in. We've implemented Okta as our customer identity solution to authenticate, authorize and secure access to our application. Using Okta, we were able to implement a secure means for our users to log in using Open ID Connect on OAuth 2 and authenticate their identities. Since our application is a primarily client side application with cloud based storage, the provisioning of authentication services from Okta proved to be fundamental in shoring up our application's security without the need to deploy our own servers. This was made possible by the support of Single Page Applications by Okta.
+
+
+## How we built it
+- The application is a Single Page Application built using ReactJS and deployed on GithubPages. 
+- The AI aspect of the application is powered by OpenAI GPT 3.5 and is used to provide the AI chatbot functionality in the doctor portal. 
+- Okta Authentication was implemented using the Okta React SDK, an npm library which provides React SPAs to access the functionalities provided by Okta Identity Services such as auth, user provisioning, Group Management, etc.
+
 
 ## Future Prospects: Enhancing System Functionality
 The iHealthHist team is actively developing Optical Character Recognition (OCR) capabilities using the OpenText Content Capture Service. This addition will further improve documentation, streamline document storage and retrieval, and undoubtedly enhance the overall system's functionality.
