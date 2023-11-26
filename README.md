@@ -1,6 +1,6 @@
 # Revolutionizing Healthcare with iHealthHist
 
-![Alt text](https://raw.githubusercontent.com/cenentury0941/i-health-hist-okta/main/splash.png)
+![Alt text](https://raw.githubusercontent.com/cenentury0941/Pictures/main/ih.png)
 
 ## Introduction
 In recent years, the medical sector has faced numerous challenges, highlighting the urgent need for a major overhaul. This transformation is particularly critical in the face of global epidemics, resource shortages, and the rise of resistant bacteria and viruses. The integration and streamlining of healthcare services beyond conventional boundaries are essential to ensure seamless access to crucial healthcare information for prompt diagnosis and disease prevention.
